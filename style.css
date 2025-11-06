@@ -5,7 +5,7 @@
 
 
 .header{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-size: cover;
     background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(./images/Angkorwat.jpg);
@@ -13,7 +13,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    animation: change 12s infinite ease-in-out;
+    transition: change 0.3s ease-in-out;
 }
+
+
+.title small{
+    display: block;
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 15px;
+}
+
 
 .navbar {
     position: absolute;
@@ -69,10 +83,39 @@
 
 .header .title h1{
     color: white;
-    font-size: 48px;
+    font-size: 98px;
     text-align: center;
 }
 .header .title p{
     color: white;
     font-size: 24px;
+    line-height: 42px;
+}
+
+@keyframes change {
+  0%
+  {
+    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(./images/2-CAMBODIA-pic-3-1694x900.jpg);
+  }
+  20%
+  {
+    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(./images/mountain.jpg);
+  }
+  40%
+  {
+    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(./images/Angkorwat1.jpg);
+  }
+  60%
+  {
+    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(./images/Cambodia-Koh-Songsaa-Private-Island-Preah-Sihanuk-Province-1694x900.jpg);
+  }
+  80%
+  {
+    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(./images/2-CAMBODIA-pic-1-1694x900.jpg);
+  }
+  100%
+  {
+    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(./images/Cambodia-Taprom-Temple-Siem-Reap-1694x900.jpg);
+  }
+  
 }
