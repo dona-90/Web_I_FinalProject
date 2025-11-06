@@ -14,8 +14,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    animation: change 12s infinite ease-in-out;
-    transition: change 0.3s ease-in-out;
+    animation: change 15s infinite ease-in-out;
 }
 
 
@@ -86,6 +85,7 @@
     font-size: 98px;
     text-align: center;
 }
+
 .header .title p{
     color: white;
     font-size: 24px;
