@@ -119,3 +119,19 @@
   }
   
 }
+
+.about {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  background-color: #f0c040;
+  display: grid;
+  grid-template-areas: "description" "img";
+  grid-template-columns: 1fr 1fr;
+}
+.description {
+  grid-area: description;
+  text-align: center;
+  line-height: 2;
+  margin-left: 5%;
+}
